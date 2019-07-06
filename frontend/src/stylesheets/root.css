@@ -1,0 +1,26 @@
+:root {
+    --c1: #4D6388;
+    --c2: #9FAAAD;
+    --c3: #9D95B1;
+    --c4: #8A92B1;
+    --c5: #F3F5F7;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--c1)
+}
+
+#root {
+    width: 100%;
+    height: 100%;
+}
+
+#App {
+    width: 100%;
+    height: 100%;
+}

@@ -1,0 +1,71 @@
+.special {
+    margin: 100px 20%;
+    height: 300px;
+    padding: 50px 50px;
+    text-align: center;
+    color: var(--c4);
+    background-color: var(--c5);
+    border-radius: 2%;
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, .1);
+    height: auto;
+    background-color: var(--c4);
+
+}
+
+.special ul {
+    padding-left: 0;
+}
+
+#Languages,
+#Channels,
+#Users {
+    margin: 0 10px 10px 10px;
+    border-top: 10px solid var(--c2);
+    padding-top: 10px;
+    height: 200px;
+    width: 150px;
+    background-color: rgb(220, 224, 240);
+    color: var(--c1);
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, .1);
+}
+
+
+.btn {
+    margin-top: 30px;
+    background-color: var(--c5);
+    color: var(--c1);
+    border: none;
+}
+
+.btn:hover {
+    background-color: var(--c1);
+    border: none;
+}
+
+.clicked {
+    background-color: var(--c3);
+}
+
+.special li {
+    list-style: none;
+}
+
+.special li:hover {
+    background-color: var(--c2);
+}
+
+.col {
+    padding: 0;
+    margin: 2%;
+}
+
+.row {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+.special>.col {
+    padding: 0;
+    margin: 0;
+}

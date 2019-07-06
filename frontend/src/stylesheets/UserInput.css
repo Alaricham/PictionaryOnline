@@ -1,0 +1,11 @@
+.container {
+    margin: 100px auto;
+    width: 500px;
+    height: 300px;
+    padding: 50px 50px;
+    text-align: center;
+    color: var(--c4);
+    background-color: var(--c5);
+    border-radius: 2%;
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, .1);
+}

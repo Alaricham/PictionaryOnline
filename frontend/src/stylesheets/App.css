@@ -1,0 +1,261 @@
+#layout {
+    margin: 40px;
+    height: 600px;
+}
+
+
+#layout canvas {
+    display: inline-block;
+    border: 5px solid var(--c3);
+    border-radius: 5px;
+    height: 300px;
+    width: 300px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, .3);
+}
+
+#layout .box1 {
+    min-width: 376px;
+    z-index: 1;
+    height: 100%;
+    padding: 0 0 30px 0;
+    width: 320px;
+    background: var(--c5);
+    box-shadow: -2px 2px 10px rgba(0, 0, 0, .3);
+
+}
+
+#layout i {
+    color: var(--c1);
+}
+
+#layout .box2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 0;
+    min-width: 376px;
+    position: relative;
+    height: 100%;
+    background-color: var(--c3);
+    border-radius: 5px;
+    padding: 20px;
+    z-index: 0;
+    left: -5%;
+    top: 0%;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, .3);
+}
+
+
+#sideMenu {
+    display: inline-block;
+    width: 60px;
+    height: 300px;
+    position: relative;
+    left: -2px;
+    background-color: var(--c3);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, .3);
+}
+
+#layout .btn:hover {
+    background-color: var(--c4)
+}
+
+#layout .btn {
+    margin-top: 5px;
+}
+
+.set {
+    display: inherit;
+}
+
+
+#chromePicker {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+}
+
+
+
+#sideMenu>* {
+
+    width: 100%;
+    text-align: center;
+    border-bottom: 2px solid var(--c1);
+}
+
+
+#layout #timerBox,
+#layout #canvasMenu,
+#layout #wordInfo {
+
+    background: var(--c2);
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, .3);
+}
+
+#layout #timerBox,
+#wordInfo {
+    text-align: center;
+    color: var(--c1);
+    padding: 5px;
+}
+
+
+#wordInfo {
+    margin-top: 10px;
+    height: 50px;
+}
+
+#layout #chatBox {
+    padding: 20px;
+    width: 250px;
+    position: inherit;
+    height: 50%;
+    color: var(--c1);
+    background: var(--c5);
+    border-radius: 5px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, .3);
+}
+
+#layout .userTags {
+    font-weight: bolder;
+}
+
+#layout h1 {
+    margin: 0;
+}
+
+#layout #userList {
+    width: 250px;
+    padding: 20px;
+    position: inherit;
+    height: 120px;
+    color: var(--c1);
+    background: var(--c5);
+    margin-bottom: 10px;
+    overflow-y: scroll;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, .3);
+}
+
+#layout #userInfo {
+    padding: 10px;
+    width: 250px;
+    color: var(--c1);
+    position: inherit;
+    background: var(--c2);
+    margin-bottom: 10px;
+    text-align: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, .3);
+
+}
+
+#layout #wordInfo {
+    height: 10%;
+}
+
+#layout #canvasMenu {
+    height: 40%;
+}
+
+#layout input {
+    width: 100%;
+    margin: 0;
+}
+
+#layout li {
+    list-style: none;
+}
+
+#layout ul {
+    padding: 0;
+    margin: 0;
+}
+
+#layout #winner{
+    position: absolute;
+    z-index: 2;
+    text-align: center;
+    color: var(--c1);
+    letter-spacing: .2rem;
+    background: rgb(199, 189, 224);
+    width: 500px;
+    height: 100px;
+    padding: 3% 5% 0 5%;
+    top: -100px;
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, .1);
+    left: 25%;
+    border-radius: 40px;
+    animation-name: winnerEnter;
+    animation-duration: 3s;
+}
+
+#layout #awaitingPlayers {
+    position: absolute;
+    z-index: 2;
+    text-align: center;
+    color: var(--c1);
+    letter-spacing: .2rem;
+    background: rgb(199, 189, 224);
+    top: 40%;
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, .1);
+    left: 25%;
+    border-radius: 40px;
+}
+
+#awaitingPlayers h1 {
+   margin: 25px 25px; 
+} 
+
+#slider {
+    position: absolute;
+    padding: 10px;
+    z-index: 2;
+    top: 0;
+    text-align: center;
+    right: 63px;
+    width: 30px;
+    height: 300px;
+    background-color: var(--c2);
+    border-bottom: none;
+}
+
+@keyframes winnerEnter {
+    0% {
+        top: -100px;
+    }
+
+    40% {
+        top: 40%
+    }
+
+    60% {
+        top: 40%
+    }
+
+    100% {
+        top: -100px;
+    }
+}
+
+@media (max-width: 895px) {
+    #layout .box2 {
+        width: 100%;
+        flex-grow: 1;
+        top: -30px;
+        left: 0;
+    }
+}
+
+
+@media (max-width: 1010px) {
+    #layout #wordInfo {
+        height: 28%;
+    }
+
+}
