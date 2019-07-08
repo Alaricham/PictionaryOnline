@@ -14,7 +14,7 @@ import '../stylesheets/UserInput.css';
 import '../stylesheets/Menu.css'
 import 'rc-slider/assets/index.css'
 
-const socket = io.connect(`http://localhost:${process.env.PORT}/`);
+const socket = io.connect(`http://localhost:${process.env.REACT_APP_PORT}/`);
 
 class App extends Component {
     constructor() {
