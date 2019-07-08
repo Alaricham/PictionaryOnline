@@ -350,6 +350,6 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname + '/frontend/build/index.html'));
 });
 
-http.listen(3000, () => {
+http.listen(process.env.PORT, () => {
     console.log('App listening...')
 })
