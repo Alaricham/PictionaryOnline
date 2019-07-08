@@ -233,6 +233,11 @@ users.rooms[3].channels.push(new Channel('Beginner01', users.rooms[3].language))
 
 // Sockets & Events
 
+io.configure(()=> {
+    io.set('transport', ['xhr-polling']);
+    io.set('polling duration', 10);
+});
+
 io.on('connection', (socket) => {
     console.log('User connected...')
 
